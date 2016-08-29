@@ -18,14 +18,16 @@ The core algorithm is given by these files.
 - test_nyul.cpp
 An example program which expects as inputs two 3D volumes given as NIFTI or Analyze files.
 
-- Make and CMake files
-to compile it without CMake, just run the "configure" and "make" commands
+- Make and CMake files (CMakeLists.txt)
+use "ccmake" . and then "make"
 
 Requirements:
-  VTK/ITK library 3.x version, future versions might have compability issues.
+  ITK library 3.x version, future versions might have compability issues.
 
 How to run it:
-test_nyul reference.nifti input.nifti 
+nyul_standardization reference.nifti input.nifti 
+The test data are taken from the free ICBM dataset
+
 
 All code is given freely as GNU/General Public License v. 3.0
 https://www.gnu.org/licenses/gpl-3.0.html
