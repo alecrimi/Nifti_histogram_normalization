@@ -27,8 +27,7 @@ int main(int argc, char * argv[])
     // Verify command line arguments
     if( argc < 3 )
     {
-        std::cerr << "Usage: " << std::endl;
-        std::cerr << argv[1] << "inputImageFileRef inputImageFile" << std::endl;
+        std::cerr << "Usage: nyul_standardization inputImageFileRef inputImageFile" << std::endl;
         return EXIT_FAILURE;
     }
     // Parse command line arguments

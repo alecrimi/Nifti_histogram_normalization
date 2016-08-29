@@ -1,6 +1,6 @@
-
+cmake_minimum_required(VERSION 2.8)
 #------------------------------------------------------------
-PROJECT(NYUL_STANDARDIZATION)
+PROJECT(test_nyul)
  
  
  
@@ -14,7 +14,7 @@ IF(ITK_FOUND)
   ADD_EXECUTABLE (nyul_standardization test_nyul.cpp nyul_standardization.h nyul_standardization.cpp )
 
   TARGET_LINK_LIBRARIES(nyul_standardization
-    ITKIO
+    ${ITK_LIBRARIES}
   )
 
 
